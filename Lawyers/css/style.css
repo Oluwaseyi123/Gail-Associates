@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.lawyers-div p {
+  text-align: center;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+.lawyers-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left-div {
+  border: 1px solid white;
+  border-radius: 10px 0px 0px 10px;
+  width: 200px;
+  height: 400px;
+  font-size: 14px;
+  color: white;
+}
+
+.left-div ol {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.left-div ol li {
+  padding-top: 30px;
+}
+
+.left-div ol li span {
+  color: red;
+}
+
+.right-div {
+  border: 1px solid white;
+  border-radius: 0px 10px 10px 0px;
+  width: 400px;
+  height: 400px;
+}
+/*# sourceMappingURL=style.css.map */

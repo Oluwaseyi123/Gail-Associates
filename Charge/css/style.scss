@@ -1,0 +1,49 @@
+.lawyers-div{
+   
+    p{
+        text-align: center;
+        font-size: 17px;
+        padding-bottom: 10px;
+    }
+}
+.lawyers-container{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+   // display: block;
+}
+.left-div{
+    border: 1px solid white;
+    border-radius: 10px 0px 0px 10px;
+    width: 200px;
+    height: 400px;
+    font-size: 14px;
+    color: white;
+    ol{
+        list-style: none;
+        padding-left: 15px;
+        li{
+            padding-top: 30px;
+            span{
+                color: red;
+            }
+        }
+    }
+}
+.right-div{
+    border: 1px solid white;
+    border-radius: 0px 10px 10px 0px;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    
+    img{
+        width: 70%;
+        margin: 25% auto;
+        display: block;
+       
+        justify-content: center;
+
+    }
+}

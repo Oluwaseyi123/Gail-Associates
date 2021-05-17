@@ -1,0 +1,56 @@
+.left-div {
+  border: 1px solid white;
+  border-radius: 10px 0px 0px 10px;
+  width: 250px;
+  height: 470px;
+  font-size: 14px;
+  color: white;
+}
+
+.left-div ol {
+  list-style: none;
+  padding-left: 8px;
+}
+
+.left-div ol li {
+  padding-top: 5px;
+}
+
+.left-div ol li span {
+  color: red;
+}
+
+.left-div p:nth-of-type(1) {
+  padding: 10px;
+}
+
+.left-div p:nth-of-type(2) {
+  padding: 10px;
+}
+
+.lawyers-div > p:nth-of-type(1) {
+  text-align: center;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+.lawyers-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right-div {
+  border: 1px solid white;
+  border-radius: 0px 10px 10px 0px;
+  width: 400px;
+  height: 470px;
+}
+/*# sourceMappingURL=style.css.map */

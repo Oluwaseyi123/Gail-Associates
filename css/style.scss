@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Bodoni 72 Smallcaps";
+    src: url("../font/Bodoni\ 72\ Smallcaps\ Book.ttf") format("ttf");
+}
+body, .container{
+    background: #000000;
+    font-family: 'Bodoni 72 Smallcaps';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+   //overflow: hidden;
+}
+p{
+    color: white;
+}
+.logo-div{
+
+    display: flex;
+    align-items: center;
+    p{
+        font-family: 'Bodoni 72 Smallcaps';
+        color: #fff;
+        //font-size: 17px;
+    }
+    img{
+        width: 45px;
+    }
+}
+.nav-right{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header{
+    padding: 20px 40px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    // position: sticky;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 80px;
+   
+}
+
+.nav-ul{
+    transition: all 1s;
+    position: relative;
+    display: none;
+    margin: 0 auto;
+    justify-content: space-between;
+    li{
+        list-style: none;
+        a{
+            color:  hsl(233, 8%, 62%);
+            text-decoration: none;
+        }
+    }
+}
+.nav-icon{
+    cursor: pointer;
+    backface-visibility: hidden;
+    transform-origin: center;   
+    display: flex;
+    align-items: center;
+}
+
+.bar-one{
+   transform: rotate(45deg) translateX(2px) translateY(7px) ;
+}
+.bar-two{
+     transform: rotate(135deg) translateX(-3px) translateY(-7px);
+}
+.bar{
+    transform-origin: center;
+   transition: transform .4s linear;
+   background: white;
+   width: 13px;
+   height: 1px;
+   margin-bottom: 3px;
+}
+
+.nav-toggle-one{    
+    transition: transform .4s linear;
+    transform: rotate(-45deg) translateY(2px) translateX(-9px);
+    transform-origin: center;
+}
+.nav-toggle-two{
+    transition: transform .4s linear;
+    transform: rotate(-135deg) translateY(1px) translateX(-7px);
+    transform-origin: center;
+  
+}
+.nav-toggle{
+    display: flex;
+    flex-direction: column;
+    top: 130px;
+    background: hsl(0, 0%, 100%);
+    width: 300px;
+    right: 30px;
+    //border-radius: 10px;
+}
+.slider{
+    img{
+        width: 100%;
+        padding: 30px;
+    }
+}
+.book-appointment{
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    border: 1px solid #F7B500;
+    padding: 5px 0px;
+    width: 130px;
+    cursor: pointer;
+    border-radius: 2px;
+    a{
+        font-size: 15px;
+    }
+}
+
+footer{
+    color: white;
+    text-align: center;
+    //padding-bottom: 40px;
+    margin-top: auto;
+}
+
+@media screen and (min-width: 1000px) {
+    .bar-one{
+        transform: rotate(150deg) translateX(-2px);
+     }
+     .bar-two{
+          transform: rotate(-150deg) translateX(-2px) ;
+     }
+     .nav-toggle-one{    
+        transition: transform .4s linear;
+        transform: rotate(-150deg) translateY(-.1px) translateX(3px);
+       
+    }
+    .nav-toggle-two{
+        transition: transform .4s linear;
+       transform: rotate(150deg) translateY(-.5px) translateX(2px);
+     
+      
+    }
+}

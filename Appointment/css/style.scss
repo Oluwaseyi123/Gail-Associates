@@ -1,0 +1,70 @@
+.book-app{
+    color: white;
+    padding: 0px 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+    max-width: 800px;
+   
+    h2{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+sup{
+    color: red;
+}
+label{
+    padding-bottom: 5px;
+}
+input{
+    width: 350px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    background: none;
+    color: white;
+    
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px black inset !important;
+}
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: #777777 !important;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {  
+    filter: invert(1);
+}
+textarea{
+    width: 350px;
+    outline: none;
+}
+button{
+    padding: 5px 25px;
+    border: 1px solid #F7B500;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (min-width: 823px){
+    .book-app{
+        max-width: 800px;
+    }
+
+    .first{
+        display: flex;
+        justify-content: space-between;
+    }
+}

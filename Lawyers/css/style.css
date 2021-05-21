@@ -1,55 +1,92 @@
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.lawyers-div p {
-  text-align: center;
-  font-size: 17px;
-  padding-bottom: 10px;
-}
-
-.lawyers-container {
+.question-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 1rem 0;
+  cursor: pointer;
 }
 
-.left-div {
-  border: 1px solid white;
-  border-radius: 10px 0px 0px 10px;
-  width: 200px;
-  height: 400px;
-  font-size: 14px;
-  color: white;
+.answer-container {
+  display: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
-.left-div ol {
-  list-style: none;
-  padding-left: 15px;
+.answer-container p {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
-.left-div ol li {
-  padding-top: 30px;
-}
-
-.left-div ol li span {
-  color: red;
+.accordions-container {
+  padding: 40px;
 }
 
 .right-div {
-  border: 1px solid white;
-  border-radius: 0px 10px 10px 0px;
-  width: 400px;
-  height: 400px;
+  display: none;
+  color: white;
+}
+
+@media screen and (min-width: 760px) {
+  .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 10px;
+    margin: 0 auto;
+    width: 700px;
+  }
+  .right-div {
+    border: 1px solid white;
+    height: 460px;
+    width: 300px;
+    display: block;
+    padding: 1px;
+    border-radius: 0px 10px 10px 0px;
+  }
+  .accordions-container {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px 0px 0px 10px;
+    height: 460px;
+  }
+  .answer-container {
+    display: none;
+  }
+  .answer-container p {
+    display: none;
+  }
+  .question-container {
+    padding-top: 10px;
+  }
+  .question-container img {
+    display: none;
+  }
+  .fees {
+    display: none;
+    text-align: left;
+  }
+  .fees p {
+    padding: 15px;
+    font-family: 'Lateef', cursive;
+    line-height: 22px;
+    color: #FAF9F6;
+    font-size: 16px;
+  }
+  .fees:target {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

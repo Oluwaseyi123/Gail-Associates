@@ -1,49 +1,81 @@
-.lawyers-div{
-   
-    p{
-        text-align: center;
-        font-size: 17px;
-        padding-bottom: 10px;
-    }
-}
-.lawyers-container{
+.question-container {
     display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-   // display: block;
+    margin: 1rem 0;
+    cursor: pointer;
+    
 }
-.left-div{
-    border: 1px solid white;
-    border-radius: 10px 0px 0px 10px;
-    width: 200px;
-    height: 400px;
-    font-size: 14px;
-    color: white;
-    ol{
-        list-style: none;
-        padding-left: 15px;
-        li{
-            padding-top: 30px;
-            span{
-                color: red;
-            }
-        }
+
+.answer-container {
+	display: none;
+    transition: all .5s ease;
+    p{
+        transition: all .5s ease;
     }
+}
+
+.accordions-container{
+    padding: 40px;
 }
 .right-div{
-    border: 1px solid white;
-    border-radius: 0px 10px 10px 0px;
-    width: 400px;
-    height: 400px;
-    align-items: center;
-    
-    img{
-        width: 70%;
-        margin: 25% auto;
-        display: block;
-       
+    display: none;
+    color: white;
+}
+@media screen and (min-width:760px){
+    .main-container{
+        //border: 1px solid red;
+        display: flex;
+        align-items: center;
         justify-content: center;
-
+       
+        padding: 10px 10px;
+        margin: 0 auto;
+        width: 700px;
     }
+    .right-div{
+        border: 1px solid white;
+        height: 460px;
+        width: 300px;
+        display: block;
+        padding: 1px;
+        border-radius: 0px 10px 10px 0px;
+    }
+    .accordions-container{
+        width: 200px;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 10px 0px 0px 10px;
+        height: 460px;
+    }
+    .answer-container{
+        display: none;
+        p{
+            display: none;
+        }
+    }
+   .question-container{
+       //width: 200px;
+       padding-top: 10px;
+       img{
+           display: none;
+       }
+   }
+   .fees{
+    display: none;
+    text-align: left;
+    p{
+        padding: 15px;
+        font-family: 'Lateef', cursive;
+        line-height: 22px;
+        color: #FAF9F6;
+       // font-family: 'Just Another Hand', cursive;
+
+        font-size: 16px;
+        // font-family: 'GTWalsheimPro;
+    }
+}
+.fees:target{
+    display: block;
+}
 }

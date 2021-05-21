@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Lateef&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lateef&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-      <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+      <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/cssfontawesome/fontawesome.css">
     <link rel="stylesheet" href="/cssfontawesome/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,45 +21,140 @@
 <body>
     <div class="container">
         <header class="header">
-            <div class="logo-div">
-                <a href="/index.htm"><img src="/images/logo.png" alt="Logo"></a>
-                <p>Gail Associates</p>
-            </div>
-            <div class="nav-right">
-                <nav class="nav">
-                    <ul class="nav-ul">
-                        <li><a href="/Lawyers/index.htm">LAWYERS</a></li>
-                        <li><a href="/expertise/index.htm">AREAS OF EXPERTISE</a></li>
-                        <li><a href="/Charge/index.htm">HOW WE CHARGE</a></li>
-                        <li><a href="/careers/index.htm">CAREERS</a></li>
-                        <li><a href="/Contact/index.htm">CONTACT</a></li>
-                        <li><a href="/About/index.htm">ABOUT US</a></li>
-                    </ul>
-                </nav>
+            <div class="header-center">
+                <div class="logo-div">
+                  <div class="logo">
+                    <img src="/images/logo.png" alt="Logo">
+                  </div>
+                  <img src="/images/g.png" alt="">
+                </div>
+                <ul class="nav-ul">
+                    <li><a href="/Lawyers/index.htm">LAWYERS</a></li>
+                    <li><a href="/expertise/index.htm">AREAS OF EXPERTISE</a></li>
+                    <li><a href="/Charge/index.htm">HOW WE CHARGE</a></li>
+                    <li><a href="/careers/index.htm">CAREERS</a></li>
+                    <li><a href="/Contact/index.htm">CONTACT</a></li>
+                    <li><a href="/About/index.htm">ABOUT US</a></li>
+                </ul>
+               
                 <div class="nav-icon">
-                    <!-- <i class="fas fa-less-than"></i> -->
-                     <a href="#" class="nav-iconn"> < </a>
+                 <img src="/images/chevron.png" class="chevron" alt="" srcset="">
+              </div>
+            </div>
+          </header>
+          <div class="main-container">
+            <div class="accordions-container">
+                <div class="accordion-container">
+                    <div class="question-container">
+                        <a href="#retainer">Retainers</a>
+                        <img src="/images/chevron.png" alt="">
+                    </div>
+                    <div class="answer-container">
+                        <p>We will charge you a fixed periodic fee (usually monthly) under either a global
+                         retainer covering all your legal work or a specific retainer covering identified
+                         aspects of the work. Unlike other firms, we are happy to include litigation in
+                         the retainer.
+                         
+                         The retainer fee has no carve-outs or exclusions. It is calculated to equate to the
+                         average value of the work over a long period, so as to smooth out the peaks and
+                         troughs and give you budgeting certainty. Examples of specific retainers we are
+                         currently working under include retainers for general commercial work, workplace
+                         relations work and advertising vetting.
+                         
+                         The retainer fee is reviewed regularly to ensure that it is pitched at a fair level in
+                         relation to the volume off  work.
+                         </p>
+                    </div>
+                </div>
+ 
+                <div class="accordion-container">
+                 <div class="question-container">
+                     <a href="#fixed-fees">Fixed and Capped Fees</a>
+                     <img src="/images/chevron.png" alt="">
+                 </div>
+                 <div class="answer-container">
+                     <p>We will quote and stick to a fixed fee for any transaction, litigation or other
+                         piece of legal work at your request. Alternatively, we will quote a capped fee
+                         which we will not exceed.
+                         </p>
+                 </div>
+             </div>
+ 
+             <div class="accordion-container">
+                 <div class="question-container">
+                     <a href="#litigation">Litigation</a>
+                     <img src="/images/chevron.png" alt="">
+                 </div>
+                 <div class="answer-container">
+                     <p>We charge a fixed monthly retainer during the preparation phase of the litigation
+                         (i.e. up to but not including the hearing). This is calculated by working out the
+                         likely total costs and spreading that out over the period that we estimate it is
+                         likely to take before the hearing occurs. We can estimate both these factors quite
+                         accurately.
+                         
+                         If there are periods where nothing at all happens (as is sometimes the case during
+                         a lengthy litigation, for example while waiting for a hearing date), then you will
+                         not be charged at all during those months.
+                         
+                         We then charge a separate fixed fee per day during the hearing itself. We do this
+                         because the work involved during a hearing is substantially greater and more
+                         intensely concentrated than during the preparation phase; and because most cases
+                         actually settle before they go to hearing. This way, we protect you from paying
+                         for the most expensive aspect (the hearing) if we help you to achieve an earlier
+                         settlement.</p>
+                    </div>
                 </div>
             </div>
-        </header>
-        <div class="lawyers-div">
-            <p>Lawyers</p>
-            <div class="lawyers-container">
-                <div class="left-div">
-                   
-                   <ol>
-                    <li> <span> 1. </span>  Retainers    </li> 
-                    <li> <span> 2. </span>  Fixed and Capped Fees</li> 
-                    <li> <span> 3. </span>  Litigation</li>
-                   </ol>
+
+            <div class="right-div">
+                <div id="retainer" class="fees">
+                    <p>We will charge you a fixed periodic fee (usually monthly) under either a global
+                        retainer covering all your legal work or a specific retainer covering identified
+                        aspects of the work. Unlike other firms, we are happy to include litigation in
+                        the retainer.
+                        
+                        The retainer fee has no carve-outs or exclusions. It is calculated to equate to the
+                        average value of the work over a long period, so as to smooth out the peaks and
+                        troughs and give you budgeting certainty. Examples of specific retainers we are
+                        currently working under include retainers for general commercial work, workplace
+                        relations work and advertising vetting.
+                        
+                        The retainer fee is reviewed regularly to ensure that it is pitched at a fair level in
+                        relation to the volume off  work.</p>
                 </div>
-                <div class="right-div">
-                    <img src="/images/Money.png" alt="">
+                <div id="fixed-fees" class="fees">
+                    <p>
+                        We will quote and stick to a fixed fee for any transaction, litigation or other
+                         piece of legal work at your request. Alternatively, we will quote a capped fee
+                         which we will not exceed.
+                    </p>
+                </div>
+                <div id="litigation" class="fees">
+                    <p>
+                        We charge a fixed monthly retainer during the preparation phase of the litigation
+                         (i.e. up to but not including the hearing). This is calculated by working out the
+                         likely total costs and spreading that out over the period that we estimate it is
+                         likely to take before the hearing occurs. We can estimate both these factors quite
+                         accurately.
+                         
+                         If there are periods where nothing at all happens (as is sometimes the case during
+                         a lengthy litigation, for example while waiting for a hearing date), then you will
+                         not be charged at all during those months.
+                         
+                         We then charge a separate fixed fee per day during the hearing itself. We do this
+                         because the work involved during a hearing is substantially greater and more
+                         intensely concentrated than during the preparation phase; and because most cases
+                         actually settle before they go to hearing. This way, we protect you from paying
+                         for the most expensive aspect (the hearing) if we help you to achieve an earlier
+                         settlement.
+                    </p>
                 </div>
             </div>
         </div>
+
+
         <div class="book-appointment">
-            <a href="../Appointment/index.htm" class="book-appointment-cta"> Book Appointment </a>
+            <a href="Appointment/index.htm" class="book-appointment-cta"> Book Appointment </a>
         </div>
 
         <footer class="footer">
@@ -64,6 +164,8 @@
     </div>
 
 
+    <script src="/app.js"></script>
     <script src="app.js"></script>
+
 </body>
 </html>

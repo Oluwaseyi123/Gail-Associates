@@ -295,4 +295,23 @@ footer {
             justify-content: space-between;
   }
 }
+
+@media screen and (min-width: 1100px) {
+  .slider {
+    overflow: hidden;
+  }
+  .slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    -webkit-animation: 60s slider infinite;
+            animation: 60s slider infinite;
+  }
+  .slider img {
+    width: 20%;
+    padding: 50px 90px;
+    float: left;
+  }
+}
 /*# sourceMappingURL=style.css.map */

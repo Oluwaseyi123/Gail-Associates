@@ -4,6 +4,9 @@
     align-items: center;
     margin: .5rem 0;
     cursor: pointer;
+    span{
+        color: red;
+    }
 }
 
 .answer-container {
@@ -13,7 +16,10 @@
         transition: all .5s ease;
     }
 }
-
+.sub-header{
+    text-align: center;
+    padding-top: 10px;
+}
 .accordions-container{
     padding: 20px 40px;
 }
@@ -36,13 +42,13 @@
     .right-div{
         border: 1px solid white;
         height: 490px;
-        width: 300px;
+        width: 400px;
         display: block;
         padding: 1px;
         border-radius: 0px 10px 10px 0px;
     }
     .accordions-container{
-        width: 200px;
+        width: 300px;
         padding: 10px;
         border: 1px solid white;
         border-radius: 10px 0px 0px 10px;

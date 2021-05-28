@@ -1,0 +1,28 @@
+.about-container{
+    padding: 10px 40px;
+    >p{
+        text-align: center;
+        padding: 10px 0px;
+    }
+}
+.about-div{
+    h3{
+        color: white;
+        padding-bottom: 5px;
+    }
+    h3:nth-of-type(2){
+        padding-top: 10px;
+    }
+
+    border: 1px solid #F7B500;
+    margin: 0 auto;
+    max-width: 900px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 20px;
+
+    p{
+        color: #d3d3d3;
+        // color: #f8f8ff;
+    }
+}

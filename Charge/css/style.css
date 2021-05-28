@@ -12,6 +12,17 @@
   cursor: pointer;
 }
 
+.question-container span {
+  color: red;
+}
+
+.charge {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-size: 17px;
+}
+
 .answer-container {
   display: none;
   -webkit-transition: all .5s ease;
@@ -50,13 +61,16 @@
   .right-div {
     border: 1px solid white;
     height: 460px;
-    width: 300px;
+    width: 400px;
     display: block;
     padding: 1px;
     border-radius: 0px 10px 10px 0px;
   }
+  .right-div p {
+    font-size: 80px;
+  }
   .accordions-container {
-    width: 200px;
+    width: 300px;
     padding: 10px;
     border: 1px solid white;
     border-radius: 10px 0px 0px 10px;

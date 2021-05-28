@@ -44,8 +44,8 @@ function toggleElement(item) {
 	console.log(siblingStyle.getPropertyValue("opacity"));
 	firstChild.style.fontWeight =
 		firstChildStyle.getPropertyValue("font-weight") === "400" ? "700" : "400";
-	sibling.style.margin = "0 0 1rem 0";
-	sibling.style.padding = "0 1rem 0 0";
+	sibling.style.margin = "0 0 .5rem 0";
+	sibling.style.padding = "0 .5rem 0 0";
 	sibling.style.color = "hsl(240, 6%, 50%)";
 	sibling.style.display =
 		siblingStyle.getPropertyValue("display") === "none" ? "block" : "none";

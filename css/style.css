@@ -170,7 +170,7 @@ a {
   background: pink;
   width: 500px;
   max-width: 600px;
-  right: -1em;
+  right: -1.5em;
 }
 
 .nav-toggle li {

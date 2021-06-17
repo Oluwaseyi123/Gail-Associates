@@ -34,7 +34,8 @@ label {
 }
 
 input {
-  width: 350px;
+  width: 78vw;
+  max-width: 350px;
   border: none;
   outline: none;
   border-bottom: 1px solid white;
@@ -59,7 +60,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 textarea {
-  width: 350px;
+  width: 78vw;
+  max-width: 350px;
   outline: none;
 }
 

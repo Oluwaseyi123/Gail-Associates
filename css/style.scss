@@ -86,7 +86,7 @@ a{
 
 .nav-ul{
     transition: all 1s;
-    width: 500px;
+    //width: 500px;
     position: relative;
     display: none;
     padding-left: 90px;
@@ -116,12 +116,13 @@ a{
 
 .nav-toggle{
     display: flex;
-   position: relative;
+    position: relative;
     flex-direction: column;
     top: 120px;
     padding: 10px 10px;
-    background: rgba($color: #FFFF00, $alpha: .2);
+    background: rgba($color: #FFC0CB, $alpha: 1);
     width: 500px;
+    max-width: 600px;
     right: -1em;
    
     // border-radius: 10px;
@@ -253,7 +254,7 @@ footer{
     .nav-ul{
         flex-direction: row;
         top: 0;
-        width: 500px;
+       // width: 500px;
        justify-content: space-between;
        animation: slide-in .5s linear ;
        animation-direction: alternate;
@@ -290,3 +291,16 @@ footer{
 
 }
 
+@media screen and (max-width: 280px){
+    .header{
+        padding: 40px 5px;
+    }
+}
+@media screen and (max-width: 250px){
+    .nav-toggle{
+        width: 500px;
+        li{
+            padding: 0px 40px;
+        }
+    }
+}

@@ -125,7 +125,6 @@ a {
 .nav-ul {
   -webkit-transition: all 1s;
   transition: all 1s;
-  width: 500px;
   position: relative;
   display: none;
   padding-left: 90px;
@@ -168,8 +167,9 @@ a {
           flex-direction: column;
   top: 120px;
   padding: 10px 10px;
-  background: rgba(255, 255, 0, 0.2);
+  background: pink;
   width: 500px;
+  max-width: 600px;
   right: -1em;
 }
 
@@ -341,7 +341,6 @@ footer {
         -ms-flex-direction: row;
             flex-direction: row;
     top: 0;
-    width: 500px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -379,6 +378,21 @@ footer {
   .nav-toggle li:nth-of-type(1) {
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .header {
+    padding: 40px 5px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .nav-toggle {
+    width: 500px;
+  }
+  .nav-toggle li {
+    padding: 0px 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
